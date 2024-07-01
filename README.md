@@ -11,6 +11,9 @@ Hier findet ihr eine fortlaufende Übersicht über unsere bislang kennengelernte
        - [Block Elemente](#21-block-elemente-nehmen-die-gesamte-breite-des-bildschirms-ein)
        - [Inline Elemente](#22-inline-elemente-nehmen-nur-die-breite-ihres-inhalts)
 2. [CSS-Eigenschaften](#css-eigenschaften)
+    - [Textformatierung](#textformatierung)
+    - [Größen](#größen)
+    - [Hintergrund](#hintergrund)
   
 3. [Nützliche Tastenkombinationen](#nützliche-tastenkombinationen-windows)
 
@@ -78,6 +81,29 @@ Folgende Elemente haben wir bislang kennengelernt:
 <br><br><br>
 ## CSS-Eigenschaften
 **CSS** steht für ***Cascading Style Sheets*** und wird verwendet, um das Aussehen von HTML-Elementen auf einer Webseite zu definieren. Mit CSS können verschiedene Eigenschaften wie Farbe, Schriftart und Positionierung definiert werden. Durch die Trennung von Inhalt und Design wird das Ändern des Aussehens der Webseite einfacher, da nur das CSS geändert werden muss, ohne den HTML-Code zu bearbeiten.
+
+### Textformatierung
+| Eigenschaft       | Beschreibung                                   | Beispiel                        |
+|-------------------|------------------------------------------------|---------------------------------|
+| `color`           | Setzt die Textfarbe.                           | `color: blue;`                  |
+| `font-size`       | Bestimmt die Schriftgröße.                     | `font-size: 16px;`              |
+| `text-decoration` | Fügt Dekorationen wie Unterstreichungen hinzu. | `text-decoration: underline;`   |
+| `font-weight`     | Definiert die Dicke der Schrift.               | `font-weight: bold;`            |
+| `font-family`     | Bestimmt die Schriftart.                       | `font-family: Arial, sans-serif;`|
+| `font-style`      | Legt den Stil der Schrift fest (z.B. kursiv).  | `font-style: italic;`           |
+
+
+### Größen
+| Eigenschaft | Beschreibung                            | Beispiel              |
+|-------------|-----------------------------------------|-----------------------|
+| `width`     | Setzt die Breite eines Elements.        | `width: 100px;`       |
+| `height`    | Bestimmt die Höhe eines Elements.       | `height: 200px;`      |
+
+
+### Hintergrund
+| Eigenschaft        | Beschreibung                          | Beispiel                    |
+|--------------------|---------------------------------------|-----------------------------|
+| `background-color` | Legt die Hintergrundfarbe fest.       | `background-color: yellow;` |
 
 
 <br><br><br>
