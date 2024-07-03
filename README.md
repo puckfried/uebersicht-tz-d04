@@ -100,10 +100,15 @@ Folgende Elemente haben wir bislang kennengelernt:
 | `height`    | Bestimmt die Höhe eines Elements.       | `height: 200px;`      |
 
 
-### Hintergrund
-| Eigenschaft        | Beschreibung                          | Beispiel                    |
-|--------------------|---------------------------------------|-----------------------------|
-| `background-color` | Legt die Hintergrundfarbe fest.       | `background-color: yellow;` |
+## Hintergrund
+| Eigenschaft           | Beschreibung                                          | Beispiel                            |
+|-----------------------|-------------------------------------------------------|-------------------------------------|
+| `background-color`    | Legt die Hintergrundfarbe fest.                       | `background-color: yellow;`         |
+| `background-size`     | Bestimmt die Größe des Hintergrundbildes.             | `background-size: cover;`           |
+| `background-repeat`   | Legt fest, ob und wie das Hintergrundbild wiederholt wird. | `background-repeat: no-repeat;`     |
+| `background-position` | Definiert die Position des Hintergrundbildes.         | `background-position: center;`      |
+| `background-attachment` | Legt fest, ob das Hintergrundbild scrollt oder fixiert ist. | `background-attachment: fixed;` |
+
 
 
 <br><br><br>
