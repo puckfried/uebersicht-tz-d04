@@ -8,7 +8,7 @@ Hier findet ihr eine fortlaufende Übersicht über unsere bislang kennengelernte
    - [Grundstruktur](#0-grundstruktur-einer-html-seite)
    - [Head-Elemente](#1-head-elemente-erscheinen-nicht-auf-der-seite-sondern-nur-infos-für-den-browser-und-google)
    - [Body-Elemente](#2-body-elemente-der-sichtbare-bereich-eurer-webseite)
-       - [Block Elemente](#21-block-elemente-nehmen-die-gesamte-breite-des-bildschirms-ein)
+       - [Block Elemente](#21-block-elemente-nehmen-die-gesamte-breite-des-elternelements-ein)
        - [Inline Elemente](#22-inline-elemente-nehmen-nur-die-breite-ihres-inhalts)
 2. [CSS-Eigenschaften](#css-eigenschaften)
     - [Textformatierung](#textformatierung)
@@ -68,6 +68,17 @@ Folgende Elemente haben wir bislang kennengelernt:
 | `<li>`         | Listenelement                             | `<li>Listeneintrag</li>`             |
 | `<div>`        | Containerelement                          | `<div>Inhalt</div>`                  |
 
+#####  zusätzliche semantische Containerelemente
+
+| HTML-Element  | Beschreibung                               | Beispiel                             |
+|:-------------:|:------------------------------------------:|:------------------------------------:|
+| `<header>`    | Definiert den Kopfbereich eines Dokuments oder einer Sektion. | `<header>Kopfbereich</header>`       |
+| `<main>`      | Hauptinhalt des Dokuments, sollte einzigartig sein. | `<main>Hauptinhalt</main>`           |
+| `<footer>`    | Definiert den Fußbereich eines Dokuments oder einer Sektion. | `<footer>Fußbereich</footer>`        |
+| `<section>`   | Thematisch zusammenhängender Bereich eines Dokuments. | `<section>Abschnitt</section>`       |
+| `<nav>`       | Definiert eine Gruppe von Navigationslinks. | `<nav>Navigation</nav>`              |
+| `<article>`   | Unabhängiger Artikel, der in sich geschlossen ist. | `<article>Artikel</article>`         |
+
 
    
 #### 2.2 Inline Elemente (nehmen nur die Breite ihres Inhalts)
@@ -82,6 +93,16 @@ Folgende Elemente haben wir bislang kennengelernt:
 ## CSS-Eigenschaften
 **CSS** steht für ***Cascading Style Sheets*** und wird verwendet, um das Aussehen von HTML-Elementen auf einer Webseite zu definieren. Mit CSS können verschiedene Eigenschaften wie Farbe, Schriftart und Positionierung definiert werden. Durch die Trennung von Inhalt und Design wird das Ändern des Aussehens der Webseite einfacher, da nur das CSS geändert werden muss, ohne den HTML-Code zu bearbeiten.
 
+## 1. Selektoren
+| Selektor              | Beschreibung                                          | Beispiel                            |
+|-----------------------|-------------------------------------------------------|-------------------------------------|
+| Elementselektor       | Wählt alle Elemente eines bestimmten Typs aus.        | `p { color: blue; }`                |
+| Klassen-Selektor      | Wählt alle Elemente mit einer bestimmten Klasse aus.  | `.classname { color: red; }`        |
+| Nachfahren-Selektor   | Wählt alle Elemente innerhalb eines bestimmten Elternteils aus. | `div p { color: green; }`          |
+| `:hover`              | Pseudoklasse für den Hover-Zustand eines Elements.    | `a:hover { color: red; }`           |
+
+
+
 ### Textformatierung
 | Eigenschaft       | Beschreibung                                   | Beispiel                        |
 |-------------------|------------------------------------------------|---------------------------------|
@@ -93,12 +114,14 @@ Folgende Elemente haben wir bislang kennengelernt:
 | `font-style`      | Legt den Stil der Schrift fest (z.B. kursiv).  | `font-style: italic;`           |
 
 
-### Größen
+### Größen, Abstände und Rahmen (Boxmodel)
 | Eigenschaft | Beschreibung                            | Beispiel              |
 |-------------|-----------------------------------------|-----------------------|
 | `width`     | Setzt die Breite eines Elements.        | `width: 100px;`       |
 | `height`    | Bestimmt die Höhe eines Elements.       | `height: 200px;`      |
-
+| `margin`    | Bestimmt den Außenabstand eines Elements. | `margin: 20px;`       |
+| `padding`   | Setzt den Innenabstand eines Elements.  | `padding: 15px;`      |
+| `border`    | Definiert die Rahmenlinie eines Elements. | `border: 1px solid black;` |
 
 ## Hintergrund
 | Eigenschaft           | Beschreibung                                          | Beispiel                            |
@@ -108,6 +131,24 @@ Folgende Elemente haben wir bislang kennengelernt:
 | `background-repeat`   | Legt fest, ob und wie das Hintergrundbild wiederholt wird. | `background-repeat: no-repeat;`     |
 | `background-position` | Definiert die Position des Hintergrundbildes.         | `background-position: center;`      |
 | `background-attachment` | Legt fest, ob das Hintergrundbild scrollt oder fixiert ist. | `background-attachment: fixed;` |
+
+
+## Flex (erste Schritte)
+| Eigenschaft      | Beschreibung                                            | Beispiel                        |
+|------------------|---------------------------------------------------------|---------------------------------|
+| `display`        | Legt den flexiblen Container fest und stellt so Kinder nebeneinander.    (Achtung: display wird nicht nur für flex verwendet!)                   | `display: flex;`                |
+| `justify-content`| Bestimmt die Ausrichtung der flexiblen Elemente entlang der Hauptachse. (hier horizontal) | `justify-content: center;`      |
+| `align-items`    | Bestimmt die Ausrichtung der flexiblen Elemente entlang der Querachse. (hier: vertikal) | `align-items: center;`          |
+| `gap`            | Legt den Abstand zwischen den flexiblen Elementen fest. | `gap: 10px;`                    |
+| `flex-wrap`      | Bestimmt, ob die flexiblen Elemente in einer einzigen Zeile oder in mehreren Zeilen angezeigt werden. | `flex-wrap: wrap;`              |
+
+
+## Erweiterte CSS-Effekte
+| Eigenschaft           | Beschreibung                                          | Beispiel                            |
+|-----------------------|-------------------------------------------------------|-------------------------------------|
+| `transition`          | Definiert Übergangseffekte zwischen zwei Zuständen eines Elements. | `transition: all 0.3s ease;`       |
+| `box-shadow`          | Fügt einem Element einen Schatten hinzu.              | `box-shadow: 0px 4px 8px rgba(0,0,0,0.3);` |
+
 
 
 
