@@ -93,7 +93,7 @@ Folgende Elemente haben wir bislang kennengelernt:
 ## CSS-Eigenschaften
 **CSS** steht für ***Cascading Style Sheets*** und wird verwendet, um das Aussehen von HTML-Elementen auf einer Webseite zu definieren. Mit CSS können verschiedene Eigenschaften wie Farbe, Schriftart und Positionierung definiert werden. Durch die Trennung von Inhalt und Design wird das Ändern des Aussehens der Webseite einfacher, da nur das CSS geändert werden muss, ohne den HTML-Code zu bearbeiten.
 
-## 1. Selektoren
+## Selektoren
 | Selektor              | Beschreibung                                          | Beispiel                            |
 |-----------------------|-------------------------------------------------------|-------------------------------------|
 | Elementselektor       | Wählt alle Elemente eines bestimmten Typs aus.        | `p { color: blue; }`                |
